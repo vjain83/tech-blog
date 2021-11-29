@@ -16,9 +16,7 @@
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vjain83/tech-blog.git"

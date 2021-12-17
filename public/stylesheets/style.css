@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(111, 131, 124);
+}
+
+nav {
+  background-color: rgb(40, 41, 33);
+  padding: 20px;
+  color: white;
+  font-size: large;
+}
+
+.heading {
+  padding: 10px;
+  display: inline;
+  background-color: wheat;
+  color: black;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-top: 15px;
+  box-shadow: 5px 5px wheat;
+}
+.post-list {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}

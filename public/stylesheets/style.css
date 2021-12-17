@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(111, 131, 124);
+  background-color: #6f837c;
 }
 
 nav {
@@ -22,7 +22,7 @@ nav {
   margin-top: 15px;
   box-shadow: 5px 5px wheat;
 }
-.post-list {
+.post {
   margin-top: 10px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }

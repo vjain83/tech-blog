@@ -20,5 +20,13 @@ async function loginFormHandler(event) {
         }
     }
 }
+function actionTaken() {
+    const signUpAction = document.querySelector('#signup-action').value
+
+    if (signUpAction) {
+        document.location.replace('signup')
+    }
+}
 
 document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+

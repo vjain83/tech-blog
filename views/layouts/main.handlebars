@@ -16,10 +16,12 @@
         <div class="container-fluid">
             <div class="navbar" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/dashboard">Dashboard</a></li>
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/logout">Logout</a></li>
+                    <li class="active"><button><a href="/">Home</a></button></li>
+                    <li><button><a href="/dashboard">Dashboard</a></button></li>
+                    <li id="login"><button><a href="/login">Login</a></button></li>
+
+                    <button style="visibility: visible" id="logout">Logout</button>
+
                 </ul>
             </div>
             <div class="heading">The Tech Blog</div>
@@ -33,5 +35,7 @@
         <p>Thanks for visiting!</p>
     </footer>
 </body>
+
+<script src="/js/logout.js"></script>
 
 </html>

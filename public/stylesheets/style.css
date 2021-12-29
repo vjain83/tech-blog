@@ -48,3 +48,6 @@ button {
 button:hover {
   background-color: rgb(61, 52, 52);
 }
+section: {
+  align-items: center;
+}

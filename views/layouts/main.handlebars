@@ -18,10 +18,13 @@
                 <ul class="nav navbar-nav">
                     <li class="active"><button><a href="/">Home</a></button></li>
                     <li><button><a href="/dashboard">Dashboard</a></button></li>
+
+                    {{#if loggedIn}}
+                    <button id="logout">Logout</button>
+
+                    {{else}}
                     <li id="login"><button><a href="/login">Login</a></button></li>
-
-                    <button style="visibility: visible" id="logout">Logout</button>
-
+                    {{/if}}
                 </ul>
             </div>
             <div class="heading">The Tech Blog</div>
@@ -35,7 +38,8 @@
         <p>Thanks for visiting!</p>
     </footer>
 </body>
-
+{{#if loggedIn}}
 <script src="/js/logout.js"></script>
+{{/if}}
 
 </html>

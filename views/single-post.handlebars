@@ -4,14 +4,15 @@
             <div class="card col-12">
                 <div class="card-header" style="background-color:rgb(40, 41, 33)" ;>
                     <p class="text-left" style="font-size:20px; color: white">{{post.title}}</p>
-                    <p class="text-right" style="font-size: 15px; color: white"> Posted by {{post.user.username}} on
+                    <p class="text-right" style="font-size: 15px; color: white">Posted by {{post.user.username}} on
                         {{post.created_at}}</p>
                 </div>
                 <div class="card-body" style="background-color: rgb(111, 131, 124) ;">
                     <p>{{post.content}}</p>
-                    <a href="/post/{{post.id}}">Comment</a>
+                    <a href="/post/{{post.id}}"></a>
 
                     {{#if loggedIn}}
+
                     <form class="comment-form">
                         <div>
                             <textarea name="comment-body"></textarea>
@@ -22,26 +23,14 @@
                         </div>
                     </form>
                     {{/if}}
-
-                    <div class="comments">
-                        {{#each post.comments}}
-                        <section class="comment">
-                            <div class="meta">
-                                {{user.username}} on {{created_at}}
-                            </div>
-                            <div class="text">
-                                {{comment_text}}
-                            </div>
-                        </section>
-                        {{/each}}
-                    </div>
-
                 </div>
 
             </div>
         </div>
     </ol>
 </div>
+
+
 {{#if loggedIn}}
 <script src="../js/comment.js"></script>
 {{/if}}

@@ -1,41 +1,30 @@
-{{!-- <article> --}}
-    <a href="/dashboard"> &larr; Back to dashboard</a>
-    {{!-- <h2>
-        Edit Post
-    </h2> --}}
-    <form class="edit-post-form">
-        <section style="width: 80%; margin:auto;">
-            <h2 style="text-align: center;"> Edit Post</h2>
-            <form class="edit-post-form">
-                <div class="card-body" style="font-size: 20px; border:solid">
-                    <label for="post-title">Title {{format_date post.created_at}}</label>
-                    <div style="margin-bottom: 15px; margin-top: 15px">
-                        <input type="text" id="post-title" name="post-title" style="width: 100%"
-                            value="{{post.title}}" />
-                    </div>
-                    <label for="post-content">Content</label>
-                    <div style="margin-bottom: 15px; margin-top: 15
-                    px">
-                        <input type="text" id="post-content" name="post-content" style="width: 100%"
-                            value="{{post.content}}" />
-                    </div>
-                    <div>
+<a href="/dashboard"> &larr; Back to dashboard</a>
 
-                        |
-                        <a href="/post/{{post.id}}">{{post.comments.length}}</a>
-                    </div>
-                    <div>
-                        <button type="submit">Save Post</button>
-                        <button type="button" class="delete-post-btn">Delete post</button>
-                    </div>
+<form class="edit-post-form">
+    <section style="width: 80%; margin:auto;">
+        <h2 style="text-align: center;"> Edit Post</h2>
+        <form class="edit-post-form">
+            <div class="card-body" style="font-size: 20px; border:solid">
+                <label for="post-title">Title {{format_date post.created_at}}</label>
+                <div style="margin-bottom: 15px; margin-top: 15px">
+                    <input type="text" id="post-title" name="post-title" style="width: 100%" value="{{post.title}}" />
                 </div>
-            </form>
-        </section>
-        {{!-- <div>
-            <input name="post-title" type="text" value="{{post.title}}" /><br>
-            <input name="post-content" type="text" value="{{post.content}}" />
-        </div>
-        <button type="submit">Save post</button>
-        <button type="button" class="delete-post-btn">Delete post</button>
-    </form>
-</article> --}}
+                <label for="post-content">Content</label>
+                <div style="margin-bottom: 15px; margin-top: 15px">
+                    <input type="text" id="post-content" name="post-content" style="width: 100%"
+                        value="{{post.content}}" />
+                </div>
+                <div>
+
+                    |
+                    <a href="/post/{{post.id}}">{{post.comments.length}}</a>
+                </div>
+                <div>
+                    <button type="submit">Save Post</button>
+                    <button type="button" class="delete-post-btn">Delete post</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="/js/edit-post.js"></script>
+    <script src="/js/delete-post.js"></script>

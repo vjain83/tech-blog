@@ -1,4 +1,4 @@
-# tech-blog
+# Tech-blog
 
 ## Project Description
 
@@ -6,23 +6,26 @@ This application is used to create tech blog where a user can add articles, as w
 
 ## Tools Used to Create This Project
 
-JavaScript ES6
-Node.js
-Express.js
-MySQL
-Sequelize
-bcrypt
-handlebars
-Heroku
+- JavaScript ES6
+- Node.js
+- Express.js
+- MySQL
+- Sequelize
+- bcrypt
+- handlebars
+- Heroku
 
 ## Test
 
 To test the application run
-node server.js
+
+- node server.js
 
 ## Deployed Heroku link
 
 Visit the website on Heroku. You can view posts and visit links as a visitor, create your own account, and as an authenticated user you can comment on posts as well as adding your own. You can edit titles of your own posts and delete posts as well.
+
+https://fast-shelf-26265.herokuapp.com/
 
 ## you-tube video link -
 
